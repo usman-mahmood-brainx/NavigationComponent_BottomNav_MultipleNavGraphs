@@ -30,50 +30,9 @@ class MainActivity : AppCompatActivity(){
         setContentView(binding.root)
 
         navController = findNavController(R.id.fragmentContainerView)
-//        appBarConfiguration =  AppBarConfiguration(setOf(R.id.nav_profile,R.id.nav_profile,R.id.nav_setting))
-//        setupActionBarWithNavController(navController,appBarConfiguration)
 
         binding.bottomNavigationView.setupWithNavController(navController)
 
     }
-      //  navController.addOnDestinationChangedListener(this)
-//        binding.bottomNavigationView.setOnItemSelectedListener { item ->
-//            when (item.itemId) {
-//                R.id.menu_home -> {
-//                    (homeNav)
-//
-//                    true
-//                }
-//                R.id.menu_profile -> {
-//                    setSelectedNavGraphId(profileNav)
-//
-//                    true
-//                }
-//                R.id.menu_setting -> {
-//                    setSelectedNavGraphId(settingNav)
-//                    true
-//                }
-//                else -> {
-//                    println(item.itemId)
-//                    false
-//                }
-//            }
-//        }
-//
 
-
-
-
-
-//    override fun onDestinationChanged(
-//        controller: NavController,
-//        destination: NavDestination,
-//        arguments: Bundle?
-//    ) {
-//        val menuItem = binding.bottomNavigationView.menu.findItem(destination.id)
-//        menuItem?.isChecked = true
-//    }
-//    override fun onSupportNavigateUp(): Boolean {
-//        return navController.navigateUp(appBarConfiguration)
-//    }
 }
